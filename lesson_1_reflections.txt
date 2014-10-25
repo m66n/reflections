@@ -1,0 +1,33 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+By removing the cruft of similar lines from the files, I could concentrate on only the different ones. However, I prefer the GUI diff tools like Meld. Color helps spot difference more easily.
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+In case of a logical mistake or typo, I can go back to see what was working in a past version and fix things quickly. Having a working version under source control would allow me to risk breaking things in an attempt to make a better version without fear of losing something that works.
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Manual choice allows me to decide when to commit based on particular circumstance, but also allows me to pollute the log with frequent commits or lose the ability to identify or rollback specific changes if commits cover too much code. Automatic saving cannot discern what an appropriate commit point is and thus the commit log will not be very useful.
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Code projects can involve multiple files that are related, so a single change can affect multiple files. Documents are usually just individual files.
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+Use git log [--stat] to see commit messages, files affected, and commit size. Use git diff to see difference between two commits by file.
+
+
+How might using version control make you more confident to make changes that could break something?
+
+If something that works resides in version control, any breaking changes can be identified and undone.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+All coding projects. Although NetBeans has built-in version control on every file. As does Lyx.

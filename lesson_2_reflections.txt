@@ -6,3 +6,28 @@ A hidden folder containing Git-specific folders and files is created. Without th
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area allows me to filter out any files or folders that do not belong under source control, but that are part of my projects. For instance, Python source files belong under source control, but compiled Python does not. Staging allows me to change many files, but only commit a subset at a time.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Using git add to stage files allows only those files that pertain to a logical change to be grouped and committed as that logical change.
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches allow substantial modification to a codebase that may just be an experiment or a dead end. Development can continue along the master and the branch without changes in one affecting the other.
+
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams show which commits are reachable from which branches. Diagrams show where branches start.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+All the commits from one branch are added to another branch, which now has a merged version of the code from each branch. The new head node of the branch has commits from two branches that are now in a single branch so the diagram shows a branch splitting into two branches and back into one.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+If a merge is unambiguous, then automatic merging saves time. However, we're at the mercy of what Git considers unambiguous.

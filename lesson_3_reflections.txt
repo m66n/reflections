@@ -16,3 +16,13 @@ Fork is GitHub-specific and allows a clone of a GitHub repository to another Git
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
 In case the remote is damaged or lost, at least its last known state is preserved.
+
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+I'm not sure. Set up a server somewhere and give every developer remote access to a Git repository on it? Does that require user accounts, SSH, and/or a VPN? I doubt any personal solution is easier than using GitHub or another web-based Git host. Just getting Apache set up takes more time than creating an account at GitHub.
+
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+If multiple developers are working on a project and modifying the same files, it makes sense for each developer to branch the code, make changes, and then merge back into master. That way someone can look at the changes that each person is making to the project and figure out how to resolve merge conflicts branch by branch until the master branch has the culmination of all the changes. If everyone was working on the master branch, each developer would have to manage merge conflicts according to what he or she was working on, and that might conflict with what other developers are doing. It seems having pull requests allows change to be managed sequentially rather than in parallel.
